@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.QuizActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/bg_second">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/userImage"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/dark_yellow"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/man_ic"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/your_name_"
+            android:textSize="16sp"
+            android:maxLength="25"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/open_sans_bold"
+            android:textColor="@color/white"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginEnd="20dp"
+                android:background="?selectableItemBackground"
+                android:id="@+id/withdrawal_coin"
+                android:gravity="center_vertical"
+                android:layout_alignParentEnd="true">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/coin_ic"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/coin_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_0"
+                    android:textSize="16sp"
+                    android:layout_marginStart="3dp"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:textColor="@color/white"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </RelativeLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/categoryImage"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:padding="10dp"
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="centerCrop"
+                android:src="@drawable/android_ic"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_card"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/q"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:textColor="@color/dark_yellow"
+                    android:textSize="17sp"/>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_marginTop="20dp"
+                android:id="@+id/question"
+                android:layout_width="match_parent"
+                android:maxLines="5"
+                android:textSize="17sp"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/open_sans_bold"
+                android:layout_height="wrap_content"
+                android:text="What is the Capital of France?"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+          <androidx.appcompat.widget.LinearLayoutCompat
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="20dp"
+              android:orientation="horizontal">
+
+              <androidx.appcompat.widget.AppCompatTextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/a"
+                  android:fontFamily="@font/open_sans_bold"
+                  android:textColor="@color/dark_yellow"
+                  android:textSize="16sp"/>
+
+              <androidx.appcompat.widget.AppCompatTextView
+                  android:id="@+id/option1"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/option1"
+                  android:maxLines="1"
+                  android:padding="5dp"
+                  android:background="?selectableItemBackground"
+                  android:layout_marginStart="10dp"
+                  android:fontFamily="@font/open_sans_light"
+                  android:textColor="@color/white"
+                  android:textSize="16sp"/>
+
+          </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/b"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:textColor="@color/dark_yellow"
+                    android:textSize="16sp"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/option2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/option2"
+                    android:maxLines="1"
+                    android:padding="5dp"
+                    android:background="?selectableItemBackground"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/open_sans_light"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/c"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:textColor="@color/dark_yellow"
+                    android:textSize="16sp"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/option3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/option3"
+                    android:maxLines="1"
+                    android:padding="5dp"
+                    android:background="?selectableItemBackground"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/open_sans_light"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/d"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:textColor="@color/dark_yellow"
+                    android:textSize="16sp"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/option4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/option4"
+                    android:maxLines="1"
+                    android:padding="5dp"
+                    android:background="?selectableItemBackground"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/open_sans_light"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/winner_lottie"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:background="@drawable/bg_second">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true"
+            app:lottie_rawRes="@raw/animation_winner"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:fontFamily="@font/open_sans_samibold"
+            android:text="@string/you_won_a_chance_to_play"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/sorry_lottie"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:background="@drawable/bg_second">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true"
+            app:lottie_rawRes="@raw/sorry_animation"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:fontFamily="@font/open_sans_samibold"
+            android:text="@string/sorry_you_have_lost"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</RelativeLayout>

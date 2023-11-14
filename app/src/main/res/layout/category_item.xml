@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginEnd="10dp"
+    android:background="@drawable/bg_card"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="0dp"
+        android:layout_height="220dp"
+        android:layout_weight="1"
+        android:elevation="5dp"
+        android:background="?selectableItemBackground"
+        android:id="@+id/category_btn"
+        android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/cardImage"
+                android:layout_width="wrap_content"
+                android:layout_height="170dp"
+                android:padding="30dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/android_ic"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/categoryText"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:gravity="center_vertical"
+                android:layout_gravity="center"
+                android:fontFamily="@font/open_sans_samibold"
+                android:text="@string/android"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

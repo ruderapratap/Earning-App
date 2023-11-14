@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/bg_third"
+    tools:context=".Fragmemts.WithdrawalFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="40dp"
+        android:layout_height="4dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="15dp"
+        android:layout_gravity="center"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="@string/withdrawal_money"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total_coin"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/open_sans_bold"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/totalCoin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_0"
+            android:background="@drawable/bg_category"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/dark_yellow"
+            android:fontFamily="@font/open_sans_bold"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_1000_coin_rs_10"
+        android:textSize="18sp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:fontFamily="@font/open_sans_bold"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/minimum_60_rs_maximum_100_rs"
+        android:textSize="18sp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:fontFamily="@font/open_sans_bold"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_amount"
+        android:layout_marginTop="10dp"
+        android:textColorHint="@color/white"
+        app:boxStrokeColor="#EAEAEE">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_amount"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:inputType="number"
+            android:maxLength="3"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edittxt_bg"
+            android:textColor="#818080"
+            android:textSize="15sp"
+            android:fontFamily="@font/open_sans_bold"
+            tools:ignore="TouchTargetSizeCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_paytm_number"
+        android:textColorHint="@color/white"
+        app:boxStrokeColor="#EAEAEE">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_paytmNumber"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:textColor="#818080"
+            android:inputType="text"
+            android:background="@drawable/edittxt_bg"
+            android:textSize="15sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/open_sans_bold"
+            tools:ignore="TouchTargetSizeCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_moneyTransfer"
+        android:layout_width="170dp"
+        android:layout_height="45dp"
+        android:text="@string/transfer_amount"
+        android:fontFamily="@font/open_sans_bold"
+        android:textSize="14sp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/dark_yellow"
+        android:background="@drawable/bg_category"
+        android:layout_gravity="center"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/bg_second"
+    tools:context=".Fragmemts.ProfileFragment">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_profile"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        app:civ_border_width="2dp"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal"
+        app:civ_border_color="@color/dark_yellow"
+        android:src="@drawable/man_ic"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/name_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/your_name"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        android:maxLines="1"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/open_sans_bold"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bg_category"
+        android:orientation="horizontal">
+
+      <androidx.appcompat.widget.AppCompatTextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="personal information"
+          android:layout_marginStart="10dp"
+          android:textSize="16sp"
+          android:fontFamily="@font/open_sans_bold"
+          android:layout_gravity="center_vertical"
+          android:textColor="@color/white"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="20dp"
+            android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btn_updown"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:tint="@color/white"
+            android:scaleType="centerCrop"
+            android:src="@drawable/up_arrow"
+            android:layout_alignParentEnd="true"
+            android:background="#F7C28B"/>
+        </RelativeLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearlayout"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_category">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name"
+                android:textSize="16sp"
+                android:fontFamily="@font/open_sans_bold"
+                android:layout_marginStart="20dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/dark_yellow"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rudera_pratap_singh"
+                android:textSize="16sp"
+                android:layout_marginEnd="10dp"
+                android:maxLines="1"
+                android:fontFamily="@font/open_sans_samibold"
+                android:layout_marginStart="10dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/white"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_category">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email"
+                android:textSize="16sp"
+                android:fontFamily="@font/open_sans_bold"
+                android:layout_marginStart="20dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/dark_yellow"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/userEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ruderapratap7900_gmail_com"
+                android:textSize="16sp"
+                android:layout_marginEnd="10dp"
+                android:maxLines="1"
+                android:fontFamily="@font/open_sans_samibold"
+                android:layout_marginStart="10dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/white"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_category">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/password_"
+                android:textSize="16sp"
+                android:fontFamily="@font/open_sans_bold"
+                android:layout_marginStart="20dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/dark_yellow"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/userPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_123456"
+                android:textSize="16sp"
+                android:layout_marginEnd="10dp"
+                android:maxLines="1"
+                android:fontFamily="@font/open_sans_samibold"
+                android:layout_marginStart="10dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/white"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_category">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/age_"
+                android:textSize="16sp"
+                android:fontFamily="@font/open_sans_bold"
+                android:layout_marginStart="20dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/dark_yellow"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/userAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_21"
+                android:textSize="16sp"
+                android:layout_marginEnd="10dp"
+                android:maxLines="1"
+                android:fontFamily="@font/open_sans_samibold"
+                android:layout_marginStart="10dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/white"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_category">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/country_"
+                android:textSize="16sp"
+                android:fontFamily="@font/open_sans_bold"
+                android:layout_marginStart="20dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/dark_yellow"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/userCountry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/india"
+                android:textSize="16sp"
+                android:layout_marginEnd="10dp"
+                android:maxLines="1"
+                android:fontFamily="@font/open_sans_samibold"
+                android:layout_marginStart="10dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/white"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_logout"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:text="@string/log_out"
+        android:fontFamily="@font/open_sans_bold"
+        android:textSize="15sp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/dark_yellow"
+        android:background="@drawable/bg_category"
+        android:layout_gravity="center"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

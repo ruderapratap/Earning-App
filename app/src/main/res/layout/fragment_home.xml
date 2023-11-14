@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/bg_second"
+    tools:context=".Fragmemts.HomeFragment">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/userImage"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/dark_yellow"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/man_ic"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/your_name_"
+            android:textSize="16sp"
+            android:maxLength="25"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/open_sans_bold"
+            android:textColor="@color/white"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginEnd="20dp"
+                android:background="?selectableItemBackground"
+                android:id="@+id/withdrawal_coin"
+                android:gravity="center_vertical"
+                android:layout_alignParentEnd="true">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/coin_ic"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/coin_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_0"
+                    android:textSize="16sp"
+                    android:layout_marginStart="3dp"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:textColor="@color/white"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </RelativeLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/category"
+        android:textSize="15sp"
+        android:paddingBottom="5dp"
+        android:paddingStart="10dp"
+        android:gravity="center_vertical"
+        android:layout_margin="20dp"
+        android:background="@drawable/bg_category"
+        android:layout_marginStart="3dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:textColor="@color/white"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/recView"/>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
